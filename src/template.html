@@ -3,7 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Custom Form Validation</title>
   </head>
-  <body></body>
+  <body>
+    <div class="content" id="content">
+      <form action="" class="test-form" id="test-form" novalidate>
+        <label for="email">
+          <div class="label-text">Email:</div>
+          <input type="email" name="userEmail" id="email" autofocus />
+        </label>
+        <label for="userCountry">
+          <div class="label-text">Country:</div>
+          <select name="country" id="userCountry">
+            <option value="AU">Australia</option>
+            <option value="IN">India</option>
+            <option value="US">United States of America</option>
+          </select>
+        </label>
+        <label for="postalCode">
+          <div class="label-text">Postal Code:</div>
+          <input type="text" name="postalCode" id="postalCode" />
+        </label>
+        <label for="password">
+          <div class="label-text">Password:</div>
+          <input type="password" name="userPassword" id="password" />
+        </label>
+        <label for="passwordConfirm">
+          <div class="label-text">Confirm Password:</div>
+          <input
+            type="password"
+            name="userPasswordConfirm"
+            id="passwordConfirm"
+          />
+        </label>
+        <div class="form-btns">
+          <button type="submit" id="submit">Submit Form</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
